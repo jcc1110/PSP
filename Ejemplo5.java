@@ -19,6 +19,6 @@ public class Ejemplo5 {
       BufferedReader br = new BufferedReader(isr);
 
     }catch (Exception e) {
-
+      e.printStackTrace();
     }
 }
