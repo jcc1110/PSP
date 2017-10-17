@@ -1,3 +1,5 @@
+
+
 import java.io.*;
 
 public class Ejemplo3 {
@@ -15,7 +17,7 @@ public class Ejemplo3 {
 			FileOutputStream fos = new FileOutputStream(args[0]);
 			PrintWriter pw = new PrintWriter(fos);
 			p = r.exec(comando);
-
+			
 			InputStream is = p.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			String linea;
@@ -27,7 +29,7 @@ public class Ejemplo3 {
 			pw.close();
 			exitVal = p.waitFor();
 			System.out.println("Valor de salida: " + exitVal);
-
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
