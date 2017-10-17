@@ -1,12 +1,10 @@
-package tema_1;
-
 import java.io.*;
 
 public class Ejemplo3 {
 
 	public static void main(String[] args) {
 		Runtime r = Runtime.getRuntime();
-		String comando = "java -jar Unsaludo.jar \"Hola Mundo!!\"";
+		String comando = "java Unsaludo \"Hola Mundo!!\"";
 		Process p = null;
 		int exitVal;
 		if(args.length < 1) {
@@ -17,7 +15,7 @@ public class Ejemplo3 {
 			FileOutputStream fos = new FileOutputStream(args[0]);
 			PrintWriter pw = new PrintWriter(fos);
 			p = r.exec(comando);
-			
+
 			InputStream is = p.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			String linea;
@@ -29,7 +27,7 @@ public class Ejemplo3 {
 			pw.close();
 			exitVal = p.waitFor();
 			System.out.println("Valor de salida: " + exitVal);
-			
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

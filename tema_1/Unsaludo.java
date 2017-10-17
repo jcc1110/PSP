@@ -1,5 +1,3 @@
-package tema_1;
-
 public class Unsaludo {
 
 	public static void main(String[] args) {
@@ -11,5 +9,4 @@ public class Unsaludo {
 			System.out.println(i+1 + ". " + args[0]);
 		}
 	}
-
 }

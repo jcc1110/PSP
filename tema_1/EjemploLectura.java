@@ -1,5 +1,3 @@
-package tema_1;
-
 import java.io.*;
 
 public class EjemploLectura {
