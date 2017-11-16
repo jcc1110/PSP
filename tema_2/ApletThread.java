@@ -1,5 +1,5 @@
-import java.awt;
-import java.java.applet;
+import java.awt.*;
+import java.applet.*;
 
 public class AppletThread extends Applet implements Runnable {
   private Thread hilo = null;
