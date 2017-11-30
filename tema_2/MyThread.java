@@ -17,7 +17,7 @@ class MyThread extends Thread {
       while (/* haya trabajo por hacer */ true) {
         suspender.waitForResume(); // Realizar el trabajo
       }
-    } catch (InterruptedException exception) {
+    } catch (InterruptedException e) {
       e.printStackTrace();
     }
   }

@@ -1,4 +1,4 @@
-public class HiloEjemploInterrupt extends Thread {
+public class HiloEjemploInterrup extends Thread {
 
   public void run() {
     try {
